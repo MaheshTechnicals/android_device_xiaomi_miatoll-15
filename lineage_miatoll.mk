@@ -38,6 +38,9 @@ AXION_CPU_DISPLAY   := 0-5
 # Turn off extra logging on release builds
 AXION_DEBUGGING_ENABLED := false
 
+#Los prebuild
+TARGET_INCLUDES_LOS_PREBUILTS := true
+
 # Include signing keys
 include vendor/lineage-priv/keys/keys.mk
 
