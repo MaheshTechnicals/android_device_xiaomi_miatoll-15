@@ -11,6 +11,9 @@ DEVICE_PATH := device/xiaomi/miatoll
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/xiaomi/miatoll_defconfig
 
+#miuicamera
+-include vendor/xiaomi/miuicamera/BoardConfigMiuiCamera.mk
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 
