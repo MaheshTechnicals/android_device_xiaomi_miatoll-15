@@ -21,4 +21,4 @@ TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 include vendor/xiaomi/miatoll/BoardConfigVendor.mk
 
 #Add framework_compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(LOCAL_PATH)/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/xiaomi/miatoll/framework_compatibility_matrix.xml
