@@ -1,169 +1,118 @@
-<?xml version="1.0"?>
-<compatibility-matrix version="2.0" type="framework">
+<?xml version="1.0" encoding="utf-8"?>
+<compatibility-matrix version="1.0" type="framework">
+  <!-- Fingerprint HALs -->
   <hal format="hidl" optional="true">
     <name>com.fingerprints.extension</name>
     <version>1.0</version>
-    <interface>
-      <name>IFingerprintEngineering</name>
-      <instance>default</instance>
-    </interface>
-    <interface>
-      <name>IFingerprintNavigation</name>
-      <instance>default</instance>
-    </interface>
-    <interface>
-      <name>IFingerprintSensorTest</name>
-      <instance>default</instance>
-    </interface>
   </hal>
   <hal format="hidl" optional="true">
     <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-    <version>2.0-1</version>
-    <interface>
-      <name>IGoodixFingerprintDaemon</name>
-      <instance>default</instance>
-    </interface>
-    <interface>
-      <name>IGoodixFingerprintDaemonExt</name>
-      <instance>default</instance>
-    </interface>
+    <version>2.1</version>
   </hal>
-  <hal format="hidl" optional="true">
+  <hal format="hidl" optional="false">
     <name>android.hardware.biometrics.fingerprint</name>
-    <version>2.0-3</version>
-    <interface>
-      <name>IBiometricsFingerprint</name>
-      <instance>default</instance>
-    </interface>
+    <version>2.1</version>
+    <version>3.0</version>
+    <version>4.0</version>
   </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.bluetooth.audio</name>
-    <version>4</version>
-    <interface>
-      <name>IBluetoothAudioProviderFactory</name>
-      <instance>default</instance>
-    </interface>
+  <!-- Health HAL -->
+  <hal format="hidl" optional="false">
+    <name>android.hardware.health</name>
+    <version>3.0</version>
   </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.cas</name>
-    <version>1</version>
-    <interface>
-      <name>IMediaCasService</name>
-      <instance>default</instance>
-    </interface>
+  <!-- NFC HAL -->
+  <hal format="hidl" optional="false">
+    <name>android.hardware.nfc</name>
+    <version>1.0</version>
   </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.drm</name>
-    <version>1</version>
-    <interface>
-      <name>IDrmFactory</name>
-      <instance>clearkey</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.ir</name>
-    <version>1</version>
-    <interface>
-      <name>IConsumerIr</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.memtrack</name>
-    <version>1</version>
-    <interface>
-      <name>IMemtrack</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.light</name>
-    <version>2</version>
-    <interface>
-      <name>ILights</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.power</name>
-    <version>4</version>
-    <interface>
-      <name>IPower</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.thermal</name>
-    <version>1</version>
-    <interface>
-      <name>IThermal</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="hidl" optional="true">
-    <name>android.hardware.usb</name>
-    <version>1.0-3</version>
-    <interface>
-      <name>IUsb</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="hidl" optional="true">
-    <name>android.hardware.usb.gadget</name>
-    <version>1.0-2</version>
-    <interface>
-      <name>IUsbGadget</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.vibrator</name>
-    <version>2</version>
-    <interface>
-      <name>IVibrator</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.wifi</name>
-    <version>2</version>
-    <interface>
-      <name>IWifi</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.wifi.hostapd</name>
-    <version>2</version>
-    <interface>
-      <name>IHostapd</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="aidl" optional="true">
-    <name>android.hardware.wifi.supplicant</name>
-    <version>3</version>
-    <interface>
-      <name>ISupplicant</name>
-      <instance>default</instance>
-    </interface>
-  </hal>
-  <hal format="hidl" optional="true">
-    <name>vendor.dolby.hardware.dms</name>
+  <!-- Sensors HAL -->
+  <hal format="hidl" optional="false">
+    <name>android.hardware.sensors</name>
     <version>2.0</version>
-    <interface>
-      <name>IDms</name>
-      <instance>default</instance>
-    </interface>
   </hal>
+  <!-- GNSS HALs -->
+  <hal format="hidl" optional="false">
+    <name>android.hardware.gnss</name>
+    <version>1.0</version>
+  </hal>
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.gnss</name>
+    <version>1.2</version>
+    <version>2.1</version>
+    <version>3.0</version>
+  </hal>
+  <!-- Power HAL -->
+  <hal format="aidl" optional="false">
+    <name>android.hardware.power</name>
+    <version>5</version>
+  </hal>
+  <!-- Thermal HAL -->
+  <hal format="aidl" optional="false">
+    <name>android.hardware.thermal</name>
+    <version>2</version>
+  </hal>
+  <!-- Xiaomi Misys -->
   <hal format="hidl" optional="true">
     <name>vendor.xiaomi.hardware.misys</name>
     <version>1.0</version>
     <version>2.0</version>
     <version>3.0</version>
-    <interface>
-      <name>IMiSys</name>
-      <instance>default</instance>
-    </interface>
+  </hal>
+  <!-- Lineage Trust HAL -->
+  <hal format="hidl" optional="true">
+    <name>vendor.lineage.trust</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI Bluetooth Audio -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.bluetooth_audio</name>
+    <version>2.0</version>
+  </hal>
+  <!-- QTI CaCert -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.cacert</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI FM -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.fm</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI QCC VND HAL -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.qccvndhal</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI QSEECom -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.qseecom</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI QTEEConnector -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.qteeconnector</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI Radio (multiple versions) -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.radio</name>
+    <version>1.2</version>
+    <version>2.5</version>
+    <version>2.6</version>
+  </hal>
+  <!-- QTI Data Factory -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.data.factory</name>
+    <version>2.0</version>
+  </hal>
+  <!-- QTI TUI Comm -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.tui_comm</name>
+    <version>1.0</version>
+  </hal>
+  <!-- QTI VPP -->
+  <hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.vpp</name>
+    <version>1.0</version>
   </hal>
 </compatibility-matrix>
